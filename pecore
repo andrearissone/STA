@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        div{
+            border: 2px solid black ;
+            padding:7px solid grey ;
+            margin:10px solid black ;
+        }
+        #box2{
+            border-color: rgb(255, 252, 47) ;
+            position: relative; left: 50px;
+        }
+        #box3{
+            border-color: rgb(142, 35, 241) ;
+            position: relative; left: 640px;
+        }
+        #box4{
+            border-color:rgb(140, 226, 140) ;
+            position: relative; left: 770px;
+        }
+        #box5{
+            border-color:rgb(207, 123, 44) ;
+            position: relative; left: 480px;
+            
+        }
+            #box6{
+                border-color:rgb(140, 226, 140) ;
+                position: relative; left: 190px;
+        }
+      
+        
+        #box7{
+            border-color:rgb(17, 16, 8) ;
+            position: relative; left: 164px;
+        }
+      
+        
+        #box8{
+            border-color:rgb(143, 75, 221) ;
+            position: relative; left: 326px;
+        
+      
+        }
+        #box2, #box3, #box4, #box5, #box6, #box7, #box8{
+            width: 400px ;
+            height: 300px ;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="box2"> <img src="StefanoSartori1-780x470.jpeg" alt="" width="400px" height="300px"></div> 
+    <br>
+    <div id="box3"><img src="pecoreee-kk3-U46100924692517Nm-656x492@CorriereVeneto-Web-Veneto.jpg" alt=""width="400px" height="300px"></div> 
+    <br>
+    <div id="box4"><img src="razze-di-pecore.webp" alt=""width="400px" height="300px"></div>
+    <br>
+    <div id="box5"><img src="merinos.jpg" alt=""width="400px" height="300px"> </div>
+    <br>
+    <div id="box6"><img src="pecora 55.jpg" alt=""width="400px" height="300px"> </div>
+    <br>
+    <div id="box7"><img src="pecora 7.jfif" alt=""width="400px" height="300px"></div>
+    <br>
+    <div id="box8"><img src="pecora 8.jpg" alt=""width="400px" height="300px"> </div>
+    <br>
+</body>
+</html>
