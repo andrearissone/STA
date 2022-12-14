@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box operatori logici</title>
+    <style>
+        div{
+            border: 2px solid rgb(255, 255, 255) ;
+            padding:7px solid rgb(255, 255, 255) ;
+            margin:10px solid rgb(255, 255, 255) ;
+        }
+        #box2{
+            background-color: rgb(255, 255, 255) ;
+            width: 400px; height: 200px;
+        }
+        #box3{
+            background-color: rgb(255, 255, 255) ;
+            width: 400px; height: 200px;
+        }
+        #box4{
+            background-color:rgb(255, 255, 255) ;
+            width: 400px; height: 200px;
+        }
+        #box5{
+            background-color:rgb(255, 255, 255) ;
+            width: 400px; height: 200px;
+        }
+        img {
+            width: 400px;
+            height: 200px;
+        }
+  
+    </style>
+</head>
+<body>
+    <div id="box2"><a href="and.html"><img src="and.png" alt=""></a></div>
+    </div>
+    <br>
+    <div id="box3"><a href="or.html"><img src="or.png" alt=""></a></div>
+    <br>
+    <div id="box4"><a href="not.html"><img src="not.png" alt=""></a></div>
+    <br>
+    <div id="box5"><a href="nand.html"><img src="nand.png" alt=""></a></div>  
+    <br>
+    <div id="box6"><a href="nor.html"><img src="nor.png" alt=""></a></div>
+</body>
+</html>
