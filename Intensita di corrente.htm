@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+
+        div {
+
+            width: 200px;
+            height: 200px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+
+    <div>
+        <p>resistenza :</p>
+        <input type="number" name="resistenza" id="resistenza">
+        <p>differenza di potenziale: 5 V</p>
+        <br>
+
+
+
+        <button onclick="calcCE()">Calcola la corrente</button>
+        <p>corrente elettrica:<p id="CE"></p>
+
+
+
+
+        <script>
+            function calcCE() {
+                let resistenza=document.getElementById("resistenza").value
+                let diffpot=5
+                let CE=resistenza/diffpot
+                document.getElementById("CE").innerHTML=CE
+            }
+
+
+
+
+        </script>
+    </div>
+</body>
+</html>
