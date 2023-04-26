@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<head>
+<style>
+.container {
+  width: 700px;
+  margin: 0 auto;
+  padding: 8px;
+  border: 5px solid #000;
+  background-color: #db3030;
+}
+
+.results {
+  width: 700px;
+  margin: 0 auto;
+  padding: 8px;
+  border: 5px solid #000;
+  background-color: #db3030;
+  
+}
+</style>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+
+
+
+  <form action="">
+
+
+ <label>voltaggio:</label><input type="number" name="voltaggio" />
+
+    
+    <label>resistenza:</label><input type="number" name="resistenza" />
+    
+
+    <select name="tipoCircuito">
+
+     
+        <option value="serie">serie</option>
+      <option value="parallelo">parallelo</option>
+    </select>
+    <input type="submit" value="calcola"/>
+  
+</form>
+
+
+</div>
+
+<div class="results">
+  <p>corrente: <span class="corrente"></span></p>
+  <p>potenza: <span class="potenza"></span></p>
+</div>
+
+<script>
+
+var form = document.querySelector('form');
+
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+
+
+  var voltaggio = parseFloat(this.voltaggio.value);
+
+  var resistenza = parseFloat(this.resistenza.value);
+
+  var tipoCircuito = this.tipoCircuito.value;
+
+
+ 
+  var corrente = 0;
+  var potenza = 0;
+  switch (tipoCircuito) {
+    case 'serie':
+
+      corrente = voltaggio / resistenza;
+      
+      potenza = voltaggio * corrente;
+
+      break;
+
+    case 'parallelo':
+
+      corrente = voltaggio / (resistenza * resistenza);
+
+      potenza = voltaggio * corrente;
+
+
+      break;
+  }
+
+  var results = document.querySelector('.results');
+
+  results.querySelector('.corrente').innerHTML = corrente;
+
+  results.querySelector('.potenza').innerHTML = potenza;
+
+  results.style.display = 'block';
+
+});
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+
+
+
+</html>
